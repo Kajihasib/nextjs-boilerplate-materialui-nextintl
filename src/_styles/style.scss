@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+$robotFont: "Roboto", sans-serif;
+$themeColor: #0735c6;
+$titleColor: #333;
+$textColor: #757575;
+$whiteColor: #fff;
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  line-height: normal;
+  font-weight: 400;
+  font-family: $robotFont;
+  background: $whiteColor;
+  @media (max-width: 767px) {
+    padding-top: 88px;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $robotFont;
+  }
+
+  a {
+    text-decoration: none;
+    transition: all 0.4s ease-in-out 0s;
+    font-family: $robotFont;
+    color: $titleColor;
+
+    &:hover {
+      color: $themeColor;
+    }
+  }
+
+  button {
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+}
